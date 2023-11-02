@@ -18,10 +18,15 @@
             --md: 14px;
             --lg: 16px;
         }
+        @media (min-width: 993px) {
+        .has-fixed-sidenav {
+        padding-left: 300px;
+        }
+    }
     </style>
     @stack('styles')
 </head>
-<body>
+<body class="has-fixed-sidenav">
 
     @yield('content')
 
