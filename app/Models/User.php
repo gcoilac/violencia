@@ -53,4 +53,29 @@ class User extends Authenticatable
             set: fn ($value) => strtolower($value)
         );
     }
+
+    public function violencias()
+    {
+        return $this->hasOne('App\Models\violencia');
+    }
+
+    public function evaluations()
+    {
+        return $this->hasOne('App\Models\evaluation');
+    }
+
+    public function networks()
+    {
+        return $this->hasMany('App\Models\network');
+    }
+
+    public function event()
+    {
+        return $this->belongsTo('App\Model\event');
+    }
+
+    public function reports()
+    {
+        return $this->hasMany('App\Models\report');
+    }
 }

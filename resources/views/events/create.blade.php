@@ -74,7 +74,7 @@
       </div>
 
 
-      <div class="row">
+      {{-- <div class="row">
         <div class="col s12">
           <label> Seleccione evento </label>
           <select name="tipo" class="browser-default" value="{{old('tipo')}}">
@@ -90,10 +90,10 @@
           <p><strong>{{$message}}</strong></p>
           @enderror
         </div>
-      </div>
+      </div> --}}
 
 
-      <div class="row">
+      {{-- <div class="row">
         <div class="col s12">
           <div class="switch">
             <span>activar evento :</span>
@@ -105,7 +105,7 @@
             </label>
           </div>
         </div>
-      </div>
+      </div> --}}
 
 
       <div class="row">

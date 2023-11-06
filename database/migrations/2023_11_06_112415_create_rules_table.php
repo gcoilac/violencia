@@ -13,15 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('events', function (Blueprint $table) {
+        Schema::create('rules', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->date('fecha_init');
-            $table->date('fecha_end');
-            $table->string('location');
-            $table->text('tipo');
-            $table->text('activated')->nullable();
-            $table->text('description');
+
+            $table->string('article');
+            $table->text('cod');
+
+            $table->unsignedBigInteger('violence_id')->nullable();
+
+            $table->foreign('violence_id')->references('id')->on('violences')->onDelete('set null');
+
             $table->timestamps();
         });
     }
@@ -33,6 +34,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('events');
+        Schema::dropIfExists('rules');
     }
 };

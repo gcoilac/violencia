@@ -23,8 +23,7 @@ class eventFactory extends Factory
             'fecha_init' => $this->faker->date(),
             'fecha_end' => $this->faker->date(),
             'location' => $this->faker->locale(),
-            'tipo' => $this->faker->randomElement(['exposicion', 'reunion', 'congreso', 'compartimiento']),
-            'activated' => $this->faker->randomElement(['on', null]),
+            // 'tipo' => $this->faker->randomElement(['exposicion', 'reunion', 'congreso', 'compartimiento']),
             'description' => $this->faker->paragraph()
         ];
     }

@@ -10,4 +10,14 @@ class event extends Model
     use HasFactory;
 
     protected $table = 'events';
+
+    public function tipo()
+    {
+        return $this->belongsTo('App\Models\tipo');
+    }
+
+    public function users()
+    {
+        return $this->belongsTo(('App\Models\user'));
+    }
 }

@@ -56,7 +56,7 @@
           <input name="location" id="direccion" type="text" class="validate" value="{{$event->location}}"/>
         </div>
       </div>
-      <div class="row">
+      {{-- <div class="row">
         <div class="col s12">
           <label> Seleccione evento </label>
           <select name="tipo" class="browser-default">
@@ -82,7 +82,7 @@
             </label>
           </div>
         </div>
-      </div>
+      </div> --}}
       <div class="row">
         <div class="input-field col s12">
           <textarea name="description" id="textarea1" class="materialize-textarea">{{$event->description}}</textarea>

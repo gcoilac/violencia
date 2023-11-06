@@ -5,9 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-use App\Models\event;
-
-class eventSeeder extends Seeder
+class ArticleSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,6 +14,6 @@ class eventSeeder extends Seeder
      */
     public function run()
     {
-        event::factory(10)->create();
+        //
     }
 }

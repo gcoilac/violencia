@@ -21,9 +21,6 @@ class eventController extends Controller
                 'fecha_init' => 'required',
                 'fecha_end' => 'required',
                 'location' => 'required',
-                'estado_civil' => 'required',
-                'tipo' => 'required',
-                'natural_de' => 'required',
                 'description' => 'required'
             ]
         );
@@ -34,8 +31,6 @@ class eventController extends Controller
         $event->fecha_init = $request->fecha_init;
         $event->fecha_end = $request->fecha_end;
         $event->location = $request->location;
-        $event->tipo = $request->tipo;
-        $event->activated = $request->activated;
         $event->description = $request->description;
 
         $event->save();
@@ -59,8 +54,6 @@ class eventController extends Controller
         $event->fecha_init = $request->fecha_init;
         $event->fecha_end = $request->fecha_end;
         $event->location = $request->location;
-        $event->tipo = $request->tipo;
-        $event->activated = $request->activated;
         $event->description = $request->description;
 
         return $event;
